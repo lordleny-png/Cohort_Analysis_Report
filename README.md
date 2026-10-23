@@ -61,18 +61,18 @@ For this analysis, learners were grouped into cohorts based on their Learner Sig
 The dataset contained cohorts from January 2023 to April 2024.
 The largest cohorts were:
 | Period | Number of records|
-|January 2024 |  | 1,546 records |
-|February 2024 | | 1,073 records |
-|August 2023 | | 1,142 records |
-|June 2023 | | 753 records |
-|July 2023 | | 713 records |
-|September 2023 | | 683 records |
-|December 2023 | 659 records  |
+| January 2024 |  | 1,546 records |
+| February 2024 | | 1,073 records |
+| August 2023 | | 1,142 records |
+| June 2023 | | 753 records |
+| July 2023 | | 713 records |
+| September 2023 | | 683 records |
+| December 2023 | 659 records  |
 The smallest cohorts were:
 | Period | Number of records|
-|April 2024 | |12 records |
-|March 2024 | |133 records |
-|February 2023 | |88 records |
+| April 2024 | |12 records |
+| March 2024 | |133 records |
+| February 2023 | |88 records |
 Key Observation
 Learner signup volume increased considerably during 2023 and reached its highest level in January 2024, with 1,546 records. The large cohort sizes during late 2023 and early 2024 indicate a substantial increase in learner activity during this period.
 FIGURE 1.3
