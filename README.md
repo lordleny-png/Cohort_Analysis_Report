@@ -62,11 +62,11 @@ The dataset contained cohorts from January 2023 to April 2024.
 The largest cohorts were:
 | Period | Number of records|
 |---| ---|
-| January 2024 | 1,546 records |
-| February 2024 | 1,073 records |
-| August 2023 | 1,142 records |
-| June 2023 | 753 records |
-| July 2023 | 713 records |
+| January 2024 |1,546 records |
+| February 2024 |1,073 records |
+| August 2023 |1,142 records |
+| June 2023 |753 records |
+| July 2023 |713 records |
 | September 2023 | 683 records |
 | December 2023 | 659 records  |
 
