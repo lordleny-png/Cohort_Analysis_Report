@@ -74,7 +74,6 @@ The largest cohorts were:
 The smallest cohorts were:
 | Period | Number of records|
 |---|---|
-
 | April 2024 |12 records |
 | March 2024 |133 records |
 | February 2023 |88 records |
