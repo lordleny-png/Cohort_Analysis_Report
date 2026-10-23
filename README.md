@@ -61,6 +61,7 @@ For this analysis, learners were grouped into cohorts based on their Learner Sig
 The dataset contained cohorts from January 2023 to April 2024.
 The largest cohorts were:
 | Period | Number of records|
+|---| ---|
 | January 2024 |  | 1,546 records |
 | February 2024 | | 1,073 records |
 | August 2023 | | 1,142 records |
