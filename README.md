@@ -1,4 +1,4 @@
-# Cohort Analysis Report
+## Cohort Analysis Report
 INTERNSHIP DELIVERABLE · WEEK 02
 Cohort Analysis Report
 with Visual Insights 
@@ -17,10 +17,10 @@ FIGURES
 https://drive.google.com/drive/folders/1kAQToeUu8IArtAiK5VgJatPtSMOHVv3s?usp=share_link
 The link above contains all the necessary files for the report.
 
-1	Data Cleaning
+## 1	Data Cleaning
 
 CONTRIBUTOR: Fatima Jaffar
-1.1 Data Cleaning
+## 1.1 Data Cleaning
 The dataset was reviewed and cleaned before conducting the cohort analysis. The cleaning process focused on improving data consistency while avoiding unsupported assumptions about the original source data.
 The following cleaning activities were performed:
 ●	Reviewed missing, invalid, duplicate, suspicious, and inconsistent records.
@@ -33,7 +33,7 @@ The following cleaning activities were performed:
 ●	Reviewed duplicate records rather than automatically deleting them without verification.
 ●	Negative date intervals were retained where the underlying cause could not be verified from the available source data. Negative Signup-to-Apply intervals were not manually changed because no reliable source was available to determine which date was incorrect.
 The final cleaned dataset used for feature engineering contained 8,536 records.
-1.2 Feature Engineering
+## 1.2 Feature Engineering
 Date-based, demographic, and opportunity-related features were derived from the existing dataset to support both cohort analysis and future predictive modeling.
 Derived Features
 These features provide additional information that can be used to identify participation patterns and can also serve as potential inputs for the predictive modeling stage.
@@ -54,10 +54,10 @@ Apply to Opportunity Start Days	Measures the time between application and opport
 Age	Provides an estimated learner age
 Age Group	Groups learners into meaningful age categories
 
- 1.3 Cohort Analysis
-1.3.1 Cohort Definition
+ ## 1.3 Cohort Analysis
+## 1.3.1 Cohort Definition
 For this analysis, learners were grouped into cohorts based on their Learner Signup Month. For example, learners who signed up during January 2023 were grouped into the 2023-01 cohort, while learners who signed up during January 2024 were grouped into the 2024-01 cohort. This approach allows participation patterns to be compared across different signup periods.
-1.3.2 Cohort Size
+## 1.3.2 Cohort Size
 The dataset contained cohorts from January 2023 to April 2024.
 The largest cohorts were:
 ●	January 2024: 1,546 records
@@ -78,7 +78,7 @@ Learner Cohort Size by Signup Month
  
 Takeaway: Shows changes in learner signup volume over time.
 
-1.4 Cohort Status Analysis
+## 1.4 Cohort Status Analysis
 Learner status was analysed across signup cohorts to understand how learners progressed through the participation process. The overall status distribution was:
 Status	Records
 Rejected	3,563
@@ -98,7 +98,7 @@ Cohort Month vs Participation Status Heatmap
 Takeaway: Shows how learner statuses varied across signup cohorts.
 
 
-1.5 Cohort Participation Analysis
+## 1.5 Cohort Participation Analysis
 For the purpose of this analysis, participation was operationalized using the following statuses:
 Started, Team Allocated, Rewards Award
 These statuses were selected to represent positive participation or progression within an opportunity.
@@ -122,7 +122,7 @@ Cohort	Total Records	Participated	Participation Rate
 2024-03	133	33	24.81%
 2024-04	12	6	50.00%
 
-Key Findings
+## Key Findings
 The March 2023 cohort recorded the highest participation rate at 85.16%. Other strong-performing early cohorts included June 2023 at 74.37%, February 2023 at 72.73%, and January 2023 at 70.32%. A decline in participation can be observed across the later cohorts. Participation decreased from 60.03% in July 2023 to 50.44% in August, followed by 39.09% in September and 37.95% in November.
 The January 2024 cohort had the largest cohort size, with 1,546 records, but its participation rate was only 27.04%. This indicates that a larger number of signups did not necessarily translate into a higher participation rate. The lowest participation rate among the larger cohorts occurred in March 2024 at 24.81%. The April 2024 cohort recorded a 50% participation rate, but it contained only 12 records, so this percentage should not be interpreted as representative of the overall population.
 
@@ -131,7 +131,7 @@ Participation Rate by Signup Cohort
  
 Takeaway: Shows differences in participation rates between signup cohorts and highlights the decline in participation across later cohorts.
 
-1.6 Opportunity Category Analysis
+## 1.6 Opportunity Category Analysis
 Opportunity categories were also compared across learner cohorts.
 The categories included:
 ●	Competition
@@ -140,7 +140,7 @@ The categories included:
 ●	Event
 ●	Internship
 The analysis showed that Internship opportunities represented a particularly large share of participation records in several of the larger cohorts. For example, the January 2024 cohort contained 1,329 Internship records out of 1,546 total records, making Internship the dominant opportunity category for that cohort. Similarly, August 2023 had 790 Internship records out of 1,142 records, while September 2023 had 514 Internship records out of 683 records. Courses were also a major category in several cohorts, particularly January through June 2023.
-Key Observation
+## Key Observation
 The distribution of opportunity categories was not uniform across cohorts. Some cohorts were strongly concentrated in Internship opportunities, while earlier cohorts showed relatively greater representation of Courses. This indicates that opportunity type is an important variable for understanding learner participation patterns.
 
 
@@ -151,7 +151,7 @@ Cohort Month vs Opportunity Category Heatmap
 Takeaway: Shows the distribution of opportunity categories across different learner cohorts.
 
 
-1.7 Key Insights
+## 1.7 Key Insights
 The cohort analysis produced several important insights:
 1. Signup volume increased substantially over time — The largest cohort occurred in January 2024 with 1,546 records, indicating a major increase in learner signup activity compared with early 2023.
 2. Larger cohorts did not necessarily have higher participation — Although January 2024 had the highest number of records, its participation rate was only 27.04%. In comparison, March 2023 had only 182 records but achieved an 85.16% participation rate. This suggests that increasing the number of signups alone does not guarantee stronger participation.
@@ -164,7 +164,7 @@ The cohort analysis produced several important insights:
 2	Exploratory Data Analysis & Visualisations
 
 CONTRIBUTOR:  Leny Napala
-Executive Summary
+## Executive Summary
 This report presents E.D.A and Visualization of Participation Trends of the week 2 workflow. The analysis uses 8,536 records from the refined RIT dataset. Its purpose is to describe participation patterns, identify changes over time, examine early engagement signals, and document remaining anomalies before modeling.
 The analysis shows a strong concentration in Internship opportunities (63.4% of records). The most frequent status is Rejected (41.7%). Signup flags provide useful variables for comparing engagement outcomes.
 These findings are descriptive. They identify patterns in the available data but do not establish causal relationships.
@@ -178,7 +178,7 @@ The week 2 analysis ready dataset includes the derived variables for EDA. Date f
 ●	Applied, Waitlisted and Rewards Awards were retained as Other rather than being forced into Positive or Negative.
 Participation Distribution
 Internship is the largest opportunity category with 5,413 records (63.4%). The most frequent status is rejected with 3,563 records (41.7%). The largest country group is United States with 3,976 records (46.6%).
-2.1 Opportunity Category Distribution
+## 2.1 Opportunity Category Distribution
 Category	Count	Percentage
 Internship	5,413	63.4%
 Course	2,024	23.7%
@@ -187,7 +187,7 @@ Competition	425	5.0%
 Engagement	129	1.5%
 
 Internship and Course make up 87% of all signups. These two are the main categories people join. Event, Competition, and Engagement are much smaller and less popular in comparison.
-2.2 Participation Status Distribution
+## 2.2 Participation Status Distribution
 Status	Count	Percentage
 Rejected	3,563	41.7%
 Team Allocated	3,271	38.3%
@@ -196,9 +196,9 @@ Dropped Out	616	7.2%
 Waitlisted	107	1.3%
 
 Most records end up as either Rejected or Team Allocated — together that's 80% of everyone. But even after someone gets allocated, some still drop out or withdraw later, so getting accepted doesn't always mean they stay engaged.
-2.3 Participation Overtime
+## 2.3 Participation Overtime
 Signup volume varies across the observation period. The highest monthly volume is 1,546 signups in 2024-01, while the lowest is 12 in 2024-04. The category-level trend should be used to determine whether these changes are concentrated in a particular opportunity type.
-2.4 Early Engagement Signals
+## 2.4 Early Engagement Signals
 The Positive outcome group has an average Days to Apply of 53.96 days, compared with 57.57 days for the Negative group.
 Average Opportunity Duration is 323.80 days for Positive outcomes and 70.57 days for Negative outcomes. Missing start dates limit interpretation of this measure.
 2.5 Anomalies
@@ -208,7 +208,7 @@ Average Opportunity Duration is 323.80 days for Positive outcomes and 70.57 days
 ●	Missing Opportunity Start Date: 3,785 records.
 ●	Missing Current/Intended Major: 5 records.
 Negative date-derived values should be flagged or excluded from relevant visual analyses according to the team's documented data-quality decision.
-2.6 Quarterly Trend Analysis
+## 2.6 Quarterly Trend Analysis
 Among complete quarters, the highest volume occurred in 2024 Q1 (2,752 signups) and the lowest in 2023 Q1 (489 signups); 2024 Q2 is excluded from this comparison since it contains only 12 records due to a data-extraction cutoff, not a genuine drop in signups. Because the dataset does not yet include a full second year, the only directly comparable year-over-year period is Q1: signups grew from 489 in 2023 to 2,752 in 2024, a roughly 5.6x increase. This should be read as a single-quarter comparison rather than evidence of a sustained annual trend, since 2024 Q2–Q4 are not yet represented in the data.
 
 
@@ -262,7 +262,7 @@ Weekend Signup by Engagement Outcome
 Takeaway: The chart compares outcome composition for weekend and non-weekend signups.
 
  
-3	Interpretation of findings
+## 3	Interpretation of findings
 
 CONTRIBUTOR:  Sumiyya Zahoor
 This section pulls the per-table and per-figure interpretations above into one place, draws out the difference between a learner's individual outcome and an opportunity's overall engagement quality, and summarizes which factors matter most.
@@ -294,7 +294,7 @@ Whether someone signs up on a weekday or a weekend doesn't really matter , the m
 ●	These two lenses do not automatically agree. Internship has by far the highest signup volume and the steadiest category-level presence (Table 2.1, Figures 1, 4, 6), which is a strong result at the opportunity level  but high volume alone does not tell us whether individual learners in that category were more likely to reach a Positive outcome. The one link the current data provides between the two lenses is Opportunity Duration (Figure 9): Positive outcomes are tied to much longer typical durations (323.80 days) than Negative outcomes (70.57 days), so duration is, so far, the clearest bridge between an opportunity-level property and a learner-level result.
 ●	Caveat: the dataset does not currently include a direct category-by-outcome breakdown, so it cannot yet be confirmed whether Internship (the highest-volume category) is also the category with the best per-learner success rate, or simply the one with the most signups. A category x outcome cross-tab would be a natural next step.
 
-3.2 Signals for High- and Low-Engagement Opportunities
+## 3.2 Signals for High- and Low-Engagement Opportunities
 ●	Strong-engagement signal: a long-expected opportunity duration. This is the most consistent marker of eventual Positive engagement observed in the data (Figure 9).
 ●	Strong-engagement signal: belonging to the Internship or Course categories, since these hold both the largest signup volume and the steadiest month-to-month and quarter-to-quarter presence (Figures 4, 6) , a sign of durable rather than one-off participation.
 ●	Weak-engagement signal: a short, tightly clustered opportunity duration, which is the pattern most associated with Negative outcomes (Figure 9).
@@ -319,7 +319,7 @@ Overall, opportunity duration is the strongest lever tied to a positive individu
 
 
 
-4	Preparation for Modeling
+## 4	Preparation for Modeling
 
 CONTRIBUTOR: Angel Wambui
 Is the Dataset Ready for Modeling?
@@ -334,10 +334,10 @@ What Needs to Be Resolved First
 ●	3,785 records are missing Opportunity Start Date, which limits how reliable Opportunity Duration is as a feature. Rather than dropping Opportunity Duration altogether, it may be worth keeping it for the ~56% of records that do have it, and adding a separate 'Has Start Date' flag so the model can account for the gap rather than being misled by it.
 ●	5 records are missing Current/Intended Major. This is a small enough number that these rows can either be dropped or the field simply left blank/'Unknown' without meaningfully affecting the model.
 
-Features Most Useful for Modeling
+## Features Most Useful for Modeling
 Based on the Phase 2–4 findings, some features carry far more signal than others though it's worth separating two different questions the data answers: what drives overall participation volume, versus what predicts an individual learner's outcome. These aren't always the same thing.
 
-Feature	Why it matters
+## Feature	Why it matters
 Opportunity Duration	The strongest signal found so far, and the clearest bridge between an opportunity-level property and a learner-level result — Positive outcomes average 324 days vs. 70 days for Negative outcomes. Worth prioritizing, with the missing-data caveat noted above.
 Opportunity Category	Internship and Course dominate overall signup volume (87% combined) and drive most of the month-to-month movement, but this is a volume signal, not a confirmed learner-outcome signal. It is not yet known whether Internship also has the best per-learner success rate, or simply the most signups. A category × outcome cross-tab (comparing Positive/Negative/Other rates within each category) should be run before treating Category as a strong predictive feature.
 Days to Apply	A weak signal on its own (54 vs. 58 days between outcome groups, with heavily overlapping distributions), but may still add value combined with other features rather than used alone.
@@ -345,19 +345,15 @@ Weekend Signup Flag	Negligible outcome mix is nearly identical for weekend vs. w
 Signup Month / Quarter	Useful for capturing the seasonal spike seen around January 2024, though this should be checked against category breakdowns first in case it's driven mainly by Internship signups rather than a genuine seasonal pattern.
 Country	United States accounts for close to half of all records (46.6%), so this field is heavily imbalanced and may need grouping (e.g., top 5 countries + 'Other') before use.
 
-Forecasting Signals
+## Forecasting Signals
 Two variables carry the clearest signal for future forecasting work. Signup Quarter is the strongest candidate seasonal indicator once a second full year of data becomes available, given the growth observed across the one directly comparable period (see 2.6). Opportunity Category interacts with this seasonality: Internship drives most of the quarter-to-quarter movement (122 to 1,715 to 2,103 records across 2023 Q1, 2023 Q3, and 2024 Q1), while Course stays comparatively flat. A forecasting model may need to treat Internship's seasonal pattern separately rather than forecasting total volume as a single series.
 Key observation for future modeling: the dataset currently spans only one directly comparable quarter across both years, so quarter-specific seasonal forecasts should be treated as provisional until at least one more full year of data has been collected.
 
-Recommended Step Before Modeling Begins
+## Recommended Step Before Modeling Begins
 Phase 4 flagged that the dataset does not yet include a direct category-by-outcome breakdown, meaning it's still unconfirmed whether Internship's high signup volume translates into better individual learner outcomes. Building this cross-tab (Opportunity Category × Engagement Outcome) before Week 3 would clarify whether Category should be treated as a meaningful predictive feature or mainly as a volume/context variable.
-Summary
+## Summary
 The dataset is close to modeling-ready. The target variable and most derived features are already in place, and the strongest early signal Opportunity Duration has been clearly identified. Opportunity Category drives overall participation volume, but its link to individual learner outcomes is still unconfirmed, so a category × outcome cross-tab is recommended before Week 3. The negative Days to Apply values and unusual ages should also be cleaned up or excluded, and a decision made on how to handle the missing Opportunity Start Date values so they don't distort the model rather than inform it.
 
 Formatted, consolidated, and cross-checked by Team Lead: Soman Saleem  
-AI Assistance
-Claude by Anthropic was used for two purposes:
-●	Formatting the final report.
-●	Final validation of results submitted by team members.
 All the content is generated by team members independently.
 
