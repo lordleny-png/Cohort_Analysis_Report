@@ -67,16 +67,16 @@ The largest cohorts were:
 | August 2023 |1,142 records |
 | June 2023 |753 records |
 | July 2023 |713 records |
-| September 2023 | 683 records |
-| December 2023 | 659 records  |
+| September 2023 |683 records |
+| December 2023 |659 records  |
 
 
 The smallest cohorts were:
 | Period | Number of records|
 |---|---|
 
-| April 2024 | 12 records |
-| March 2024 | 133 records |
+| April 2024 |12 records |
+| March 2024 |133 records |
 | February 2023 |88 records |
 
 
@@ -114,22 +114,24 @@ These statuses were selected to represent positive participation or progression 
 The resulting cohort participation rates were:
 
 Cohort	Total Records	Participated	Participation Rate
-2023-01	219	154	70.32%
-2023-02	88	64	72.73%
-2023-03	182	155	85.16%
-2023-04	280	186	66.43%
-2023-05	406	284	69.95%
-2023-06	753	560	74.37%
-2023-07	713	428	60.03%
-2023-08	1,142	576	50.44%
-2023-09	683	267	39.09%
-2023-10	423	210	49.65%
-2023-11	224	85	37.95%
-2023-12	659	272	41.27%
-2024-01	1,546	418	27.04%
-2024-02	1,073	363	33.83%
-2024-03	133	33	24.81%
-2024-04	12	6	50.00%
+|Date|Number|Percentage|
+|--|--|--|
+|2023-01|219154|70.32%|
+|2023-02|88	64|72.73%|
+|2023-03|182	155|	85.16%|
+|2023-04|280	186	|66.43%|
+|2023-05|	406	284|69.95%|
+|2023-06|753	560|74.37%|
+|2023-07|713	428	60.03%
+|2023-08|1,142	576|50.44%|
+|2023-09|683	267|39.09%|
+|2023-10|423	210|49.65%|
+|2023-11	|224	85|37.95%|
+|2023-12	|659	272|41.27%|
+|2024-01|1,546	418|27.04%|
+|2024-02|1,073	363|33.83%|
+2024-03	|133	33|24.81%|
+2024-04|12	6	|50.00%|
 
 ## Key Findings
 The March 2023 cohort recorded the highest participation rate at 85.16%. Other strong-performing early cohorts included June 2023 at 74.37%, February 2023 at 72.73%, and January 2023 at 70.32%. A decline in participation can be observed across the later cohorts. Participation decreased from 60.03% in July 2023 to 50.44% in August, followed by 39.09% in September and 37.95% in November.
